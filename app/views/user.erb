@@ -1,0 +1,26 @@
+
+<h1>Please fill in the details below...</h1>
+
+<form action="/users" method="POST">
+	<label> First Name:</label>
+	<br/>
+	<input type="text" name="user[first_name]" value="<%= @user.first_name%>">
+	<br/>
+	<label> Last Name:</label>
+	<br/>
+	<input type="text" name="user[last_name]" value="<%= @user.first_name%>">
+	<br/>
+	<label> Email: </label>
+	<br/>
+	<input type="text" name="user[email]" value="<%= @user.email %>">
+	<br/>
+	<label> Password </label>
+	<br/>
+	<input type="text" name="user[password]" value="<%= @user.password%>">
+	<br/>
+
+	<input type="submit" value="Create my account!!">
+
+	<a href="/login">already have an account? login here</a>
+	
+</form>

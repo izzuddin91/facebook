@@ -1,0 +1,21 @@
+<div class="container">
+	<h1>Welcome to your page!!!!</h1>
+ first name:<h1><%= @user.first_name %></h1>
+  last_name:<h3><%= @user.last_name %></h3>
+  email:<p><%= @user.email %></p>
+
+<li><a href="/status/<%= @user.id %>/edit">do you want to edit your profile?</a></li>
+<br/>
+
+<li><a href="/status/<%= @user.id%>/put_status">how do you feel today?</a></li>
+
+<h3>My Statuses</h3>
+ <li><% @statuses.each do |status|  %>
+	<%= status.news %>
+ <% end%>
+</li>
+
+
+
+
+</div>
